@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Automation Practice Test Suite]" parallel="methods">
+  <test thread-count="1" name="Automation Practice Test Cases(failed)" parallel="methods">
+    <classes>
+      <class name="com.automation.qa.testcases.OrderHistoryPageTest">
+        <methods>
+          <include name="verifyPageTitleTest"/>
+          <include name="verifyDownloadInvoiceTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.automation.qa.testcases.OrderHistoryPageTest -->
+    </classes>
+  </test> <!-- Automation Practice Test Cases(failed) -->
+</suite> <!-- Failed suite [Automation Practice Test Suite] -->

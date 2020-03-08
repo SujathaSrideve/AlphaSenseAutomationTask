@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Automation_Practice_Test_Suite">
+              <span class="suite-name border-failed">Automation Practice Test Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Automation_Practice_Test_Suite">
+                    <span>C:\Users\sujatha.srideve\eclipse-workspace\AutomationPractice\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Automation_Practice_Test_Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Automation_Practice_Test_Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Automation_Practice_Test_Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Automation_Practice_Test_Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Automation_Practice_Test_Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Automation_Practice_Test_Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">27 methods, 2 failed,   25 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="hide-methods failed suite-Automation_Practice_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Automation_Practice_Test_Suite -->
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="show-methods failed suite-Automation_Practice_Test_Suite"> (show)</a> <!-- show-methods failed suite-Automation_Practice_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Automation_Practice_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyDownloadInvoiceTest">verifyDownloadInvoiceTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyPageTitleTest">verifyPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Automation_Practice_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="hide-methods passed suite-Automation_Practice_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Automation_Practice_Test_Suite -->
+                      <a href="#" panel-name="suite-Automation_Practice_Test_Suite" class="show-methods passed suite-Automation_Practice_Test_Suite"> (show)</a> <!-- show-methods passed suite-Automation_Practice_Test_Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Automation_Practice_Test_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SelectAndCheckoutPageTest" hash-for-method="validateSelectedItemTest">validateSelectedItemTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyAddressExistTest">verifyAddressExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SelectAndCheckoutPageTest" hash-for-method="verifyAddressPresentTest">verifyAddressPresentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SelectAndCheckoutPageTest" hash-for-method="verifyConfirmationMessageTest">verifyConfirmationMessageTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyDownloadInvoiceNotEmptyTest">verifyDownloadInvoiceNotEmptyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SearchPageTest" hash-for-method="verifyEnterSearchTextTest">verifyEnterSearchTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.HomePageTest" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.LoginPageTest" hash-for-method="verifyInvalidLoginAndCaptureScreenshotTest">verifyInvalidLoginAndCaptureScreenshotTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.HomePageTest" hash-for-method="verifyLoggingOutTest">verifyLoggingOutTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.LoginPageTest" hash-for-method="verifyLoginTest">verifyLoginTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.LoginPageTest" hash-for-method="verifyLogoDisplayTest">verifyLogoDisplayTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.HomePageTest" hash-for-method="verifyLogoutLinkTest">verifyLogoutLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.HomePageTest" hash-for-method="verifyMyCartLinkTest">verifyMyCartLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyMyInformationExistTest">verifyMyInformationExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyMyWishlistExistTest">verifyMyWishlistExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyOrderHistoryExistTest">verifyOrderHistoryExistTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.OrderHistoryPageTest" hash-for-method="verifyOrderHistoryNotEmptyTest">verifyOrderHistoryNotEmptyTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SelectAndCheckoutPageTest" hash-for-method="verifyOrderPageTitleTest">verifyOrderPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SearchPageTest" hash-for-method="verifyPageTitle">verifyPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.LoginPageTest" hash-for-method="verifyPageTitleTest">verifyPageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SearchPageTest" hash-for-method="verifyResultTextTest">verifyResultTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SearchPageTest" hash-for-method="verifySearchBoxPresentTest">verifySearchBoxPresentTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.SearchPageTest" hash-for-method="verifySearchResultNotNullTest">verifySearchResultNotNullTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.HomePageTest" hash-for-method="verifySearchTextTest">verifySearchTextTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Automation_Practice_Test_Suite" title="com.automation.qa.testcases.HomePageTest" hash-for-method="verifyUserAccountNameTest">verifyUserAccountNameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Automation_Practice_Test_Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Automation_Practice_Test_Suite" class="panel Automation_Practice_Test_Suite">
+          <div class="suite-Automation_Practice_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.automation.qa.testcases.OrderHistoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDownloadInvoiceTest">
+                  </a> <!-- verifyDownloadInvoiceTest -->
+                  <span class="method-name">verifyDownloadInvoiceTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.automation.qa.testcases.OrderHistoryPageTest.verifyDownloadInvoiceTest(OrderHistoryPageTest.java:105)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitleTest">
+                  </a> <!-- verifyPageTitleTest -->
+                  <span class="method-name">verifyPageTitleTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Order history - My Store] but found []
+	at com.automation.qa.testcases.OrderHistoryPageTest.verifyPageTitleTest(OrderHistoryPageTest.java:93)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-failed -->
+          <div class="suite-Automation_Practice_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.qa.testcases.OrderHistoryPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddressExistTest">
+                  </a> <!-- verifyAddressExistTest -->
+                  <span class="method-name">verifyAddressExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDownloadInvoiceNotEmptyTest">
+                  </a> <!-- verifyDownloadInvoiceNotEmptyTest -->
+                  <span class="method-name">verifyDownloadInvoiceNotEmptyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyInformationExistTest">
+                  </a> <!-- verifyMyInformationExistTest -->
+                  <span class="method-name">verifyMyInformationExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyWishlistExistTest">
+                  </a> <!-- verifyMyWishlistExistTest -->
+                  <span class="method-name">verifyMyWishlistExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderHistoryExistTest">
+                  </a> <!-- verifyOrderHistoryExistTest -->
+                  <span class="method-name">verifyOrderHistoryExistTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderHistoryNotEmptyTest">
+                  </a> <!-- verifyOrderHistoryNotEmptyTest -->
+                  <span class="method-name">verifyOrderHistoryNotEmptyTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-passed -->
+          <div class="suite-Automation_Practice_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.qa.testcases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePageTitleTest">
+                  </a> <!-- verifyHomePageTitleTest -->
+                  <span class="method-name">verifyHomePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoggingOutTest">
+                  </a> <!-- verifyLoggingOutTest -->
+                  <span class="method-name">verifyLoggingOutTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutLinkTest">
+                  </a> <!-- verifyLogoutLinkTest -->
+                  <span class="method-name">verifyLogoutLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMyCartLinkTest">
+                  </a> <!-- verifyMyCartLinkTest -->
+                  <span class="method-name">verifyMyCartLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchTextTest">
+                  </a> <!-- verifySearchTextTest -->
+                  <span class="method-name">verifySearchTextTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserAccountNameTest">
+                  </a> <!-- verifyUserAccountNameTest -->
+                  <span class="method-name">verifyUserAccountNameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-passed -->
+          <div class="suite-Automation_Practice_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.qa.testcases.SelectAndCheckoutPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateSelectedItemTest">
+                  </a> <!-- validateSelectedItemTest -->
+                  <span class="method-name">validateSelectedItemTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAddressPresentTest">
+                  </a> <!-- verifyAddressPresentTest -->
+                  <span class="method-name">verifyAddressPresentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyConfirmationMessageTest">
+                  </a> <!-- verifyConfirmationMessageTest -->
+                  <span class="method-name">verifyConfirmationMessageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyOrderPageTitleTest">
+                  </a> <!-- verifyOrderPageTitleTest -->
+                  <span class="method-name">verifyOrderPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-passed -->
+          <div class="suite-Automation_Practice_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.qa.testcases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyInvalidLoginAndCaptureScreenshotTest">
+                  </a> <!-- verifyInvalidLoginAndCaptureScreenshotTest -->
+                  <span class="method-name">verifyInvalidLoginAndCaptureScreenshotTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginTest">
+                  </a> <!-- verifyLoginTest -->
+                  <span class="method-name">verifyLoginTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoDisplayTest">
+                  </a> <!-- verifyLogoDisplayTest -->
+                  <span class="method-name">verifyLogoDisplayTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitleTest">
+                  </a> <!-- verifyPageTitleTest -->
+                  <span class="method-name">verifyPageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-passed -->
+          <div class="suite-Automation_Practice_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.qa.testcases.SearchPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyEnterSearchTextTest">
+                  </a> <!-- verifyEnterSearchTextTest -->
+                  <span class="method-name">verifyEnterSearchTextTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPageTitle">
+                  </a> <!-- verifyPageTitle -->
+                  <span class="method-name">verifyPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResultTextTest">
+                  </a> <!-- verifyResultTextTest -->
+                  <span class="method-name">verifyResultTextTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchBoxPresentTest">
+                  </a> <!-- verifySearchBoxPresentTest -->
+                  <span class="method-name">verifySearchBoxPresentTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchResultNotNullTest">
+                  </a> <!-- verifySearchResultNotNullTest -->
+                  <span class="method-name">verifySearchResultNotNullTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Automation_Practice_Test_Suite-class-passed -->
+        </div> <!-- panel Automation_Practice_Test_Suite -->
+        <div panel-name="test-xml-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sujatha.srideve\eclipse-workspace\AutomationPractice\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Automation Practice Test Suite&quot; parallel=&quot;methods&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Automation Practice Test Cases&quot; parallel=&quot;methods&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.qa.testcases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.automation.qa.testcases.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;com.automation.qa.testcases.SearchPageTest&quot;/&gt;
+      &lt;class name=&quot;com.automation.qa.testcases.SelectAndCheckoutPageTest&quot;/&gt;
+      &lt;class name=&quot;com.automation.qa.testcases.OrderHistoryPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Automation Practice Test Cases --&gt;
+&lt;/suite&gt; &lt;!-- Automation Practice Test Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Automation Practice Test Cases (5 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Automation_Practice_Test_Suite');
+function tableData_Automation_Practice_Test_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(27);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifySearchResultNotNullTest')
+data.setCell(0, 2, 'com.automation.qa.testcases.SearchPageTest')
+data.setCell(0, 3, 20068);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyConfirmationMessageTest')
+data.setCell(1, 2, 'com.automation.qa.testcases.SelectAndCheckoutPageTest')
+data.setCell(1, 3, 5337);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyDownloadInvoiceNotEmptyTest')
+data.setCell(2, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(2, 3, 3834);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyDownloadInvoiceTest')
+data.setCell(3, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(3, 3, 3721);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyInvalidLoginAndCaptureScreenshotTest')
+data.setCell(4, 2, 'com.automation.qa.testcases.LoginPageTest')
+data.setCell(4, 3, 3154);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginTest')
+data.setCell(5, 2, 'com.automation.qa.testcases.LoginPageTest')
+data.setCell(5, 3, 2848);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoggingOutTest')
+data.setCell(6, 2, 'com.automation.qa.testcases.HomePageTest')
+data.setCell(6, 3, 1869);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyOrderHistoryExistTest')
+data.setCell(7, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(7, 3, 64);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyLogoutLinkTest')
+data.setCell(8, 2, 'com.automation.qa.testcases.HomePageTest')
+data.setCell(8, 3, 50);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyMyWishlistExistTest')
+data.setCell(9, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(9, 3, 48);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyAddressExistTest')
+data.setCell(10, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(10, 3, 48);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifySearchTextTest')
+data.setCell(11, 2, 'com.automation.qa.testcases.HomePageTest')
+data.setCell(11, 3, 45);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyAddressPresentTest')
+data.setCell(12, 2, 'com.automation.qa.testcases.SelectAndCheckoutPageTest')
+data.setCell(12, 3, 42);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyMyCartLinkTest')
+data.setCell(13, 2, 'com.automation.qa.testcases.HomePageTest')
+data.setCell(13, 3, 41);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateSelectedItemTest')
+data.setCell(14, 2, 'com.automation.qa.testcases.SelectAndCheckoutPageTest')
+data.setCell(14, 3, 39);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyLogoDisplayTest')
+data.setCell(15, 2, 'com.automation.qa.testcases.LoginPageTest')
+data.setCell(15, 3, 39);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifySearchBoxPresentTest')
+data.setCell(16, 2, 'com.automation.qa.testcases.SearchPageTest')
+data.setCell(16, 3, 37);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyUserAccountNameTest')
+data.setCell(17, 2, 'com.automation.qa.testcases.HomePageTest')
+data.setCell(17, 3, 37);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyMyInformationExistTest')
+data.setCell(18, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(18, 3, 32);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifyEnterSearchTextTest')
+data.setCell(19, 2, 'com.automation.qa.testcases.SearchPageTest')
+data.setCell(19, 3, 30);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'verifyResultTextTest')
+data.setCell(20, 2, 'com.automation.qa.testcases.SearchPageTest')
+data.setCell(20, 3, 30);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyOrderHistoryNotEmptyTest')
+data.setCell(21, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(21, 3, 19);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'verifyPageTitleTest')
+data.setCell(22, 2, 'com.automation.qa.testcases.LoginPageTest')
+data.setCell(22, 3, 15);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyHomePageTitleTest')
+data.setCell(23, 2, 'com.automation.qa.testcases.HomePageTest')
+data.setCell(23, 3, 11);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyPageTitleTest')
+data.setCell(24, 2, 'com.automation.qa.testcases.OrderHistoryPageTest')
+data.setCell(24, 3, 10);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyPageTitle')
+data.setCell(25, 2, 'com.automation.qa.testcases.SearchPageTest')
+data.setCell(25, 3, 9);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyOrderPageTitleTest')
+data.setCell(26, 2, 'com.automation.qa.testcases.SelectAndCheckoutPageTest')
+data.setCell(26, 3, 8);
+window.suiteTableData['Automation_Practice_Test_Suite']= { tableData: data, tableDiv: 'times-div-Automation_Practice_Test_Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 41 seconds</span>
+              <div id="times-div-Automation_Practice_Test_Suite">
+              </div> <!-- times-div-Automation_Practice_Test_Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Automation Practice Test Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Automation_Practice_Test_Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageTitleTest</span>
+                <span class="method-start">13879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">13897 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14914 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePageTitleTest</span>
+                <span class="method-start">30536 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30549 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31263 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPageTitle</span>
+                <span class="method-start">49366 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">49376 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SelectAndCheckoutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">50079 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOrderPageTitleTest</span>
+                <span class="method-start">70840 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">70850 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.OrderHistoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">71554 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOrderHistoryExistTest</span>
+                <span class="method-start">93032 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">93097 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">93712 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoDisplayTest</span>
+                <span class="method-start">106600 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">106639 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">107346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserAccountNameTest</span>
+                <span class="method-start">123396 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">123434 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">124154 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchBoxPresentTest</span>
+                <span class="method-start">141689 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">141726 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SelectAndCheckoutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">142445 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateSelectedItemTest</span>
+                <span class="method-start">167090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">167131 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.OrderHistoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">167844 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMyWishlistExistTest</span>
+                <span class="method-start">189513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">189561 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">190196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginTest</span>
+                <span class="method-start">203667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">206517 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">207207 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMyCartLinkTest</span>
+                <span class="method-start">223076 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">223119 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">223849 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyEnterSearchTextTest</span>
+                <span class="method-start">241747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">241778 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SelectAndCheckoutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">242486 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddressPresentTest</span>
+                <span class="method-start">263823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">263867 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.OrderHistoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">264564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAddressExistTest</span>
+                <span class="method-start">286996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">287045 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">287684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyInvalidLoginAndCaptureScreenshotTest</span>
+                <span class="method-start">300837 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">303991 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">304683 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLogoutLinkTest</span>
+                <span class="method-start">320499 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">320550 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">321248 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchResultNotNullTest</span>
+                <span class="method-start">339304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">359373 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SelectAndCheckoutPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">360049 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyConfirmationMessageTest</span>
+                <span class="method-start">381541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">386878 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.OrderHistoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">387603 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMyInformationExistTest</span>
+                <span class="method-start">409153 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">409185 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">409810 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoggingOutTest</span>
+                <span class="method-start">425662 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">427533 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.SearchPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">428250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyResultTextTest</span>
+                <span class="method-start">445798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">445828 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.OrderHistoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">446530 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyOrderHistoryNotEmptyTest</span>
+                <span class="method-start">468688 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">468707 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">469305 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySearchTextTest</span>
+                <span class="method-start">485381 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">485426 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.qa.testcases.OrderHistoryPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">486066 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPageTitleTest</span>
+                <span class="method-start">507726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">507740 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">508373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyDownloadInvoiceTest</span>
+                <span class="method-start">530059 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">533781 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">534420 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDownloadInvoiceNotEmptyTest</span>
+                <span class="method-start">556144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">559979 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
