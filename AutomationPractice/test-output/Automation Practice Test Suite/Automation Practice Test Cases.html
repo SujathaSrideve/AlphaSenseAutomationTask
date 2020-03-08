@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Automation Practice Test Cases</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>25/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 08 02:12:35 EET 2020</td>
+<td>Started on:</td><td>Mon Mar 09 00:43:04 EET 2020</td>
 </tr>
-<tr><td>Total time:</td><td>560 seconds (560732 ms)</td>
+<tr><td>Total time:</td><td>393 seconds (393338 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,19 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyDownloadInvoiceTest()'><b>verifyDownloadInvoiceTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.automation.qa.testcases.OrderHistoryPageTest.verifyDownloadInvoiceTest(OrderHistoryPageTest.java:105)
+<td title='com.automation.qa.testcases.LoginPageTest.verifyInvalidLoginAndCaptureScreenshotTest()'><b>verifyInvalidLoginAndCaptureScreenshotTest</b><br>Test class: com.automation.qa.testcases.LoginPageTest</td>
+<td><div><pre>java.lang.AssertionError:  Unsuccessful Login please check username and password.Screenshot captured for debugging purpose. expected [false] but found [true]
+	at com.automation.qa.testcases.LoginPageTest.verifyInvalidLoginAndCaptureScreenshotTest(LoginPageTest.java:61)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace692545951", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace692545951'><pre>java.lang.AssertionError: expected [true] but found [false]
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2099190613", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2099190613'><pre>java.lang.AssertionError:  Unsuccessful Login please check username and password.Screenshot captured for debugging purpose. expected [false] but found [true]
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertTrue(Assert.java:44)
-	at org.testng.Assert.assertTrue(Assert.java:54)
-	at com.automation.qa.testcases.OrderHistoryPageTest.verifyDownloadInvoiceTest(OrderHistoryPageTest.java:105)
+	at org.testng.Assert.assertFalse(Assert.java:65)
+	at com.automation.qa.testcases.LoginPageTest.verifyInvalidLoginAndCaptureScreenshotTest(LoginPageTest.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -102,40 +101,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>3</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyPageTitleTest()'><b>verifyPageTitleTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [Order history - My Store] but found []
-	at com.automation.qa.testcases.OrderHistoryPageTest.verifyPageTitleTest(OrderHistoryPageTest.java:93)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1631373285", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1631373285'><pre>java.lang.AssertionError: expected [Order history - My Store] but found []
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at org.testng.Assert.assertEquals(Assert.java:463)
-	at com.automation.qa.testcases.OrderHistoryPageTest.verifyPageTitleTest(OrderHistoryPageTest.java:93)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-</pre></div></td>
-<td>0</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
+<td>2</td>
+<td>com.automation.qa.testcases.LoginPageTest@28d25987</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -148,127 +115,92 @@ function toggleAllBoxes() {
 <td title='com.automation.qa.testcases.SelectAndCheckoutPageTest.validateSelectedItemTest()'><b>validateSelectedItemTest</b><br>Test class: com.automation.qa.testcases.SelectAndCheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@29774679</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyAddressExistTest()'><b>verifyAddressExistTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
+<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SelectAndCheckoutPageTest.verifyAddressPresentTest()'><b>verifyAddressPresentTest</b><br>Test class: com.automation.qa.testcases.SelectAndCheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@29774679</td></tr>
+<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SelectAndCheckoutPageTest.verifyConfirmationMessageTest()'><b>verifyConfirmationMessageTest</b><br>Test class: com.automation.qa.testcases.SelectAndCheckoutPageTest</td>
 <td></td>
 <td>5</td>
-<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@29774679</td></tr>
+<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab</td></tr>
 <tr>
-<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyDownloadInvoiceNotEmptyTest()'><b>verifyDownloadInvoiceNotEmptyTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
+<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyDownloadInvoiceTest()'><b>verifyDownloadInvoiceTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
 <td></td>
 <td>3</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
+<td>com.automation.qa.testcases.OrderHistoryPageTest@61832929</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SearchPageTest.verifyEnterSearchTextTest()'><b>verifyEnterSearchTextTest</b><br>Test class: com.automation.qa.testcases.SearchPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SearchPageTest@61832929</td></tr>
+<td>com.automation.qa.testcases.SearchPageTest@523884b2</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.HomePageTest.verifyHomePageTitleTest()'><b>verifyHomePageTitleTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.HomePageTest@5b275dab</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.LoginPageTest.verifyInvalidLoginAndCaptureScreenshotTest()'><b>verifyInvalidLoginAndCaptureScreenshotTest</b><br>Test class: com.automation.qa.testcases.LoginPageTest</td>
-<td></td>
-<td>3</td>
-<td>com.automation.qa.testcases.LoginPageTest@523884b2</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.HomePageTest.verifyLoggingOutTest()'><b>verifyLoggingOutTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
-<td></td>
-<td>1</td>
-<td>com.automation.qa.testcases.HomePageTest@5b275dab</td></tr>
+<td>com.automation.qa.testcases.HomePageTest@4501b7af</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.LoginPageTest.verifyLoginTest()'><b>verifyLoginTest</b><br>Test class: com.automation.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>2</td>
-<td>com.automation.qa.testcases.LoginPageTest@523884b2</td></tr>
+<td>com.automation.qa.testcases.LoginPageTest@28d25987</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.LoginPageTest.verifyLogoDisplayTest()'><b>verifyLogoDisplayTest</b><br>Test class: com.automation.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.LoginPageTest@523884b2</td></tr>
+<td>com.automation.qa.testcases.LoginPageTest@28d25987</td></tr>
 <tr>
-<td title='com.automation.qa.testcases.HomePageTest.verifyLogoutLinkTest()'><b>verifyLogoutLinkTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
+<td title='com.automation.qa.testcases.HomePageTest.verifyMyCartLinkAndSearchBoxTest()'><b>verifyMyCartLinkAndSearchBoxTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.HomePageTest@5b275dab</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.HomePageTest.verifyMyCartLinkTest()'><b>verifyMyCartLinkTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.qa.testcases.HomePageTest@5b275dab</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyMyInformationExistTest()'><b>verifyMyInformationExistTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyMyWishlistExistTest()'><b>verifyMyWishlistExistTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
+<td>com.automation.qa.testcases.HomePageTest@4501b7af</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyOrderHistoryExistTest()'><b>verifyOrderHistoryExistTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
+<td>com.automation.qa.testcases.OrderHistoryPageTest@61832929</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.OrderHistoryPageTest.verifyOrderHistoryNotEmptyTest()'><b>verifyOrderHistoryNotEmptyTest</b><br>Test class: com.automation.qa.testcases.OrderHistoryPageTest</td>
 <td></td>
-<td>0</td>
-<td>com.automation.qa.testcases.OrderHistoryPageTest@3ffc5af1</td></tr>
+<td>21</td>
+<td>com.automation.qa.testcases.OrderHistoryPageTest@61832929</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SelectAndCheckoutPageTest.verifyOrderPageTitleTest()'><b>verifyOrderPageTitleTest</b><br>Test class: com.automation.qa.testcases.SelectAndCheckoutPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@29774679</td></tr>
+<td>com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SearchPageTest.verifyPageTitle()'><b>verifyPageTitle</b><br>Test class: com.automation.qa.testcases.SearchPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SearchPageTest@61832929</td></tr>
+<td>com.automation.qa.testcases.SearchPageTest@523884b2</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.LoginPageTest.verifyPageTitleTest()'><b>verifyPageTitleTest</b><br>Test class: com.automation.qa.testcases.LoginPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.LoginPageTest@523884b2</td></tr>
+<td>com.automation.qa.testcases.LoginPageTest@28d25987</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SearchPageTest.verifyResultTextTest()'><b>verifyResultTextTest</b><br>Test class: com.automation.qa.testcases.SearchPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SearchPageTest@61832929</td></tr>
+<td>com.automation.qa.testcases.SearchPageTest@523884b2</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SearchPageTest.verifySearchBoxPresentTest()'><b>verifySearchBoxPresentTest</b><br>Test class: com.automation.qa.testcases.SearchPageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.SearchPageTest@61832929</td></tr>
+<td>com.automation.qa.testcases.SearchPageTest@523884b2</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.SearchPageTest.verifySearchResultNotNullTest()'><b>verifySearchResultNotNullTest</b><br>Test class: com.automation.qa.testcases.SearchPageTest</td>
 <td></td>
 <td>20</td>
-<td>com.automation.qa.testcases.SearchPageTest@61832929</td></tr>
-<tr>
-<td title='com.automation.qa.testcases.HomePageTest.verifySearchTextTest()'><b>verifySearchTextTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
-<td></td>
-<td>0</td>
-<td>com.automation.qa.testcases.HomePageTest@5b275dab</td></tr>
+<td>com.automation.qa.testcases.SearchPageTest@523884b2</td></tr>
 <tr>
 <td title='com.automation.qa.testcases.HomePageTest.verifyUserAccountNameTest()'><b>verifyUserAccountNameTest</b><br>Test class: com.automation.qa.testcases.HomePageTest</td>
 <td></td>
 <td>0</td>
-<td>com.automation.qa.testcases.HomePageTest@5b275dab</td></tr>
+<td>com.automation.qa.testcases.HomePageTest@4501b7af</td></tr>
 </table><p>
 </body>
 </html>

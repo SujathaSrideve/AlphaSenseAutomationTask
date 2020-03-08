@@ -5,8 +5,6 @@ import org.openqa.selenium.TakesScreenshot;
 
 
 import java.io.File;
-//import java.io.FileInputStream;
-//import java.io.FileNotFoundException;
 import java.io.IOException;
 import org.apache.commons.io.FileUtils;
 
@@ -16,12 +14,7 @@ public class TestUtil extends TestBase {
 	
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 20;
-	
-	public static long IMPLICIT_WAIT_OPTIONS = 3;
-	
-	public void switchToFrame() {
-		driver.switchTo().frame("fancybox-iframe");
-	}
+
 	//For taking screenshot
 	public void takeScreenshotTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

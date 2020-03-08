@@ -25,35 +25,41 @@ public class LoginPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp(){
 		initialization();
+		homePage = new HomePage();	
+		loginPage = new LoginPage();
 		testUtil = new TestUtil();
-		loginPage = new LoginPage();	
 	}
 	
 	@Test(priority=1)
 	public void verifyPageTitleTest(){
 		String title = loginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "My Store");
+		Assert.assertEquals(title, "My Store","LoginPage title not matched");
 	}
-	
+
 	@Test(priority=2)
 	public void verifyLogoDisplayTest(){
 		boolean flag = loginPage.validateLogoImage();
-		Assert.assertTrue(flag);
+		Assert.assertTrue(flag, "Logo not visible in LoginPage");
 	}
 	
 	@Test(priority=3)
 	public void verifyLoginTest(){
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	} 
+		Assert.assertTrue(loginPage.validateLogout(), " Unsuccessful Login please check username and password");
+	}
 	
-	@Test(priority=4)
+	@Test(priority=4) //This case added to capture screenshot when testcase is failing.
 	public void verifyInvalidLoginAndCaptureScreenshotTest(){
 		homePage = loginPage.login(prop.getProperty("InvalidUser"), prop.getProperty("password"));
+		
 		try {
 			testUtil.takeScreenshotTest();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		Assert.assertFalse(loginPage.validateLogin(), " Unsuccessful Login please check username and password."
+				+ "Screenshot captured for debugging purpose.");
 	}
 	
 	@AfterMethod

@@ -16,16 +16,15 @@ public class SearchPage extends TestBase{
 	@FindBy(name= "search_query")
 	WebElement searchBox;
 	
-	@FindBy(xpath="//div[@class='product-container']")
+	@FindBy(className= "product-container")
 	WebElement searchResult;
 	
-	@FindBy(xpath="//span[@class= 'lighter']")
+	@FindBy(className= "lighter")
 	WebElement searchedKeyword;
 
-	@FindBy(xpath="//span[@class='heading-counter']")
+	@FindBy(className= "heading-counter")
 	WebElement resultText;
 
-	
 	public SearchPage(){
 		PageFactory.initElements(driver, this);
 		

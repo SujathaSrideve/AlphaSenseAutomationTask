@@ -14,21 +14,24 @@ public class OrderHistoryPage extends TestBase {
 	
 	// Page factory - Object Repository
 	
-		@FindBy(xpath = "//a[@class='account']/span")
+		@FindBy(className="account")
 		@CacheLookup
 		WebElement userNameLabel;
-		
-		@FindBy(xpath = "//a[@title='Orders']/span")
+
+		@FindBy(partialLinkText="HISTORY")
 		WebElement orders;
 		
-		@FindBy(xpath = "//a[@title='My wishlists']/span")
+		@FindBy(partialLinkText="WISHLISTS")
 		WebElement myWishlist;
 		
-		@FindBy(xpath = "//a[@title='Addresses']/span")
+		@FindBy(partialLinkText="ADDRESSES")
 		WebElement address;
-		
-		@FindBy(xpath = "//a[@title='Information']/span")
+
+		@FindBy(partialLinkText="INFORMATION")
 		WebElement info;
+		
+		@FindBy(partialLinkText="CREDIT")
+		WebElement credits;
 		
 		@FindBy(xpath = "//table[@id='order-list']/tbody/tr[1]/td[6]/a[@title='Invoice']")
 		WebElement firstInvoice;
@@ -56,6 +59,10 @@ public class OrderHistoryPage extends TestBase {
 		
 		public boolean verifyWishListExist(){
 			return myWishlist.isDisplayed();
+		}
+		
+		public boolean verifyCreditSlipsExist(){
+			return credits.isDisplayed();
 		}
 		
 		public boolean verifyAddressExist(){

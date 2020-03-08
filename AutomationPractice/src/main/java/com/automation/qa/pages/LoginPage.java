@@ -19,11 +19,17 @@ public class LoginPage extends TestBase {
 	@FindBy(name= "SubmitLogin")
 	WebElement loginBtn;
 	
-	@FindBy(xpath= "//a[@class='login']")
-	WebElement SignIn;
+	@FindBy(className="login")
+	WebElement signIn;
 	
-	@FindBy(xpath= "//img[@class='img-responsive']")
-	WebElement Logo;
+	@FindBy(id="header_logo")
+	WebElement logo;
+	
+	@FindBy(className="login")
+	WebElement login;
+	
+	@FindBy(className="logout")
+	WebElement logout;
 	
 	//Initializing the Page Objects:
 		public LoginPage(){
@@ -36,11 +42,19 @@ public class LoginPage extends TestBase {
 		}
 		
 		public boolean validateLogoImage(){
-			return Logo.isDisplayed();
+			return logo.isDisplayed();
+		}
+		
+		public boolean validateLogin(){
+			return login.isDisplayed();
+		}
+		
+		public boolean validateLogout(){
+			return logout.isDisplayed();
 		}
 		
 		public HomePage login(String un, String pwd){
-			SignIn.click();
+			signIn.click();
 			username.sendKeys(un);
 			password.sendKeys(pwd);
 			loginBtn.click();   	

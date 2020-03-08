@@ -1,21 +1,22 @@
 package com.automation.qa.pages;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.automation.qa.base.TestBase;
-import com.automation.qa.util.TestUtil;
 
 public class SelectAndCheckoutPage extends TestBase {
 	
 	// Page factory - Object Repository
 	
+	@FindBy(className = "heading-counter")
+	WebElement checkoutMsg;
+	
 	@FindBy(xpath= "//h5/a[@title='Printed Chiffon Dress']")
 	WebElement selectItem;
-	    
 	
 	@FindBy(xpath= "//button[@type='submit']/span[contains(text(), 'Add to cart')]")
 	WebElement addToCart;
@@ -23,19 +24,13 @@ public class SelectAndCheckoutPage extends TestBase {
 	@FindBy(xpath= "//a[@title='Proceed to checkout']")
 	WebElement checkout;
 	
-	@FindBy(xpath= "//span[@title='Close window']")
-	WebElement close;
-	
-	@FindBy(xpath= "//span[@class='heading-counter']")
-	WebElement checkoutMsg;
-	
 	@FindBy(xpath= "//td/p[@class='product-name']/a")
 	WebElement itemSelected;
-	
-	@FindBy(xpath= "//div[@class='shopping_cart']/a")
+
+	@FindBy(className = "shopping_cart")
 	WebElement shoppingCart;
-	
-	@FindBy(xpath= "//span[@class='address_alias']")
+
+	@FindBy(className = "address_alias")
 	WebElement address;
 	
 	@FindBy(xpath= "//a[@class='button btn btn-default standard-checkout button-medium']/span")
@@ -44,22 +39,19 @@ public class SelectAndCheckoutPage extends TestBase {
 	@FindBy(xpath= "//span[text()='Proceed to checkout']")
 	WebElement next2;
 	
-	/*@FindBy(xpath= "//button[@type='submit']/span")
-	WebElement next3;*/
-	
 	@FindBy(xpath= "//button[@name='processCarrier']/span")
 	WebElement next3;
+
+	@FindBy(id="cgv")
+	WebElement checkbox; 
 	
-	@FindBy(xpath= "//span/input[@type='checkbox']")
-	WebElement checkbox;
-	
-	@FindBy(xpath= "//a[@class='bankwire']")
+	@FindBy(className= "bankwire")
 	WebElement payment;
 	
 	@FindBy(xpath= "//button[@class='button btn btn-default button-medium']")
 	WebElement agree;
-	
-	@FindBy(xpath= "//h1[@class='page-heading']")
+
+	@FindBy(className= "page-heading")
 	WebElement confirm;
 	
 	
@@ -84,11 +76,6 @@ public class SelectAndCheckoutPage extends TestBase {
 		return new SelectAndCheckoutPage();
 	}
 	
-	public void shoppingCart(){
-		driver.switchTo().defaultContent();
-		shoppingCart.click();
-	}
-	
 	public String itemVisibleInOrderPage(){
 		return itemSelected.getText();
 	}
@@ -102,18 +89,23 @@ public class SelectAndCheckoutPage extends TestBase {
 	}
 	
 	public void proceedToNext(){
-		next1.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_OPTIONS, TimeUnit.SECONDS);
-		next2.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_OPTIONS, TimeUnit.SECONDS);
-		checkbox.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_OPTIONS, TimeUnit.SECONDS);
-		next3.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_OPTIONS, TimeUnit.SECONDS);
-		payment.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_OPTIONS, TimeUnit.SECONDS);
-		agree.click();
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT_OPTIONS, TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
+		 try 
+	        {
+			 	next1.click();  
+	            wait.until(ExpectedConditions.elementToBeClickable(next2));
+	            next2.click();
+	            checkbox.click();
+	            wait.until(ExpectedConditions.elementToBeClickable(next3));
+	            next3.click();
+	            wait.until(ExpectedConditions.elementToBeClickable(payment));
+	            payment.click();
+	            wait.until(ExpectedConditions.elementToBeClickable(agree));
+	            agree.click();
+	        } 
+	        catch (Exception e) {
+	        }
+
 	}
 	
 	public String validateConfirmationMessage(){

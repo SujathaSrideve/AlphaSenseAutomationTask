@@ -3,14 +3,13 @@
 <suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Automation Practice Test Suite]" parallel="methods">
   <test thread-count="1" name="Automation Practice Test Cases(failed)" parallel="methods">
     <classes>
-      <class name="com.automation.qa.testcases.OrderHistoryPageTest">
+      <class name="com.automation.qa.testcases.LoginPageTest">
         <methods>
-          <include name="verifyPageTitleTest"/>
-          <include name="verifyDownloadInvoiceTest"/>
           <include name="setUp"/>
+          <include name="verifyInvalidLoginAndCaptureScreenshotTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.automation.qa.testcases.OrderHistoryPageTest -->
+      </class> <!-- com.automation.qa.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Automation Practice Test Cases(failed) -->
 </suite> <!-- Failed suite [Automation Practice Test Suite] -->

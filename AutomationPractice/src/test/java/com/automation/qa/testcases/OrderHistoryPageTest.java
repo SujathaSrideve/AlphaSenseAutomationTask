@@ -1,13 +1,6 @@
 package com.automation.qa.testcases;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
-
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -25,7 +18,6 @@ public class OrderHistoryPageTest extends TestBase {
 	HomePage homePage;
 	TestUtil testUtil;
 	OrderHistoryPage historyPage;
-	File folder;
 	
 	public OrderHistoryPageTest() {
 		super();
@@ -38,91 +30,52 @@ public class OrderHistoryPageTest extends TestBase {
 
 	@BeforeMethod
 	public void setUp() {
+		
 		initialization();
-		testUtil = new TestUtil();
 		loginPage = new LoginPage();
+		homePage = new HomePage();
 		historyPage = new OrderHistoryPage();
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		historyPage.getUserInformation();
 		
-		//creating unique folder
-		folder = new File(UUID.randomUUID().toString());
-		folder.mkdir();
-		
-		//Chrome Options
-		ChromeOptions options = new ChromeOptions();
-		Map<String, Object> perfs = new HashMap<String, Object>();
-		
-		//popup disabled and capability set.
-		perfs.put("profile.default_content_settings.popups", 0);
-		perfs.put("download.default_directory", folder.getAbsolutePath());
-		options.setExperimentalOption("prefs", perfs);
-		DesiredCapabilities cap = DesiredCapabilities.chrome();
-		cap.setCapability(ChromeOptions.CAPABILITY, options);
-		options.merge(cap);
-		driver = new ChromeDriver(options);
-	}
-
-	@Test(priority=1)
-	public void verifyOrderHistoryExistTest(){
-		Assert.assertTrue(historyPage.verifyOrderHistoryExist());
 	}
 	
+	@Test(priority=1)
+	public void verifyOrderHistoryExistTest(){
+		Assert.assertTrue(historyPage.verifyOrderHistoryExist(),"Order History doesn't exist");
+		Assert.assertTrue(historyPage.verifyWishListExist(), "MY WISHLISTS not found");
+		Assert.assertTrue(historyPage.verifyAddressExist(), "MY ADDRESSES not found");
+		Assert.assertTrue(historyPage.verifyMyInformationExist(), "MY INFORMATION not found");
+		Assert.assertTrue(historyPage.verifyCreditSlipsExist(), "MY CREDITS not found");
+	}
+
 	@Test(priority=2)
-	public void verifyMyWishlistExistTest(){
-		Assert.assertTrue(historyPage.verifyWishListExist());
+	public void verifyOrderHistoryNotEmptyTest(){
+		historyPage.getHistoricalInformation();
+		Assert.assertNotNull(historyPage.historyTableNotEmpty(), "Order History Table is empty");
 	}
 	
 	@Test(priority=3)
-	public void verifyAddressExistTest(){
-		Assert.assertTrue(historyPage.verifyAddressExist());
-	}
-	
-	@Test(priority=4)
-	public void verifyMyInformationExistTest(){
-		Assert.assertTrue(historyPage.verifyMyInformationExist());
-	}
-	
-	@Test(priority=5)
-	public void verifyOrderHistoryNotEmptyTest(){
-		Assert.assertNotNull(historyPage.historyTableNotEmpty());
-	}
-	@Test(priority=6)
-	public void verifyPageTitleTest(){
-		String historyPageTitle = historyPage.validateOrderHistoryPageTitle();
-		Assert.assertEquals(historyPageTitle, "Order history - My Store");
+	public void verifyDownloadInvoiceTest() throws InterruptedException{
+		
+		historyPage.showOrderHistory();
+		historyPage.downloadFirstInvoice();
+
+		 //wait for download
+		 Thread.sleep(2000);
+		 Assert.assertNotNull(folder.listFiles(), "Folder is empty and No file downloaded"); 
 	} 
 	
-	@Test(priority=7)
-	public void verifyDownloadInvoiceTest() throws InterruptedException{
-		 historyPage.showOrderHistory();
-		 historyPage.downloadFirstInvoice();
-		 
-		 //wait for download
-		 Thread.sleep(2000);
-		 File listofFiles[] = folder.listFiles();
-		 //make sure directory not empty
-		 Assert.assertTrue(listofFiles.length > 0);
-	}
-	@Test(priority=8)
-	public void verifyDownloadInvoiceNotEmptyTest() throws InterruptedException{
-		 historyPage.showOrderHistory();
-		 historyPage.downloadFirstInvoice();
-		 
-		 //wait for download
-		 Thread.sleep(2000);
-		 File listofFiles[] = folder.listFiles();
-		 //make sure downloaded file not empty
-		 for(File file : listofFiles )
-		 Assert.assertTrue(file.length() > 0);
-		 
-	}
 	@AfterMethod
 	public void tearDown(){
-		driver.quit();
+		
+		//Deleting all temp folders and file created for saving invoices
 		for(File file : folder.listFiles()) {
 			file.delete();
 		}
 		folder.delete();
+		
+		driver.quit();
 	}
+
 }

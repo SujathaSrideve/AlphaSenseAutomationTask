@@ -30,9 +30,9 @@ public class SearchPageTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		testUtil = new TestUtil();
-		searchPage = new SearchPage();
 		loginPage = new LoginPage();
+		homePage = new HomePage();
+		searchPage = new SearchPage(); //new instance created as landing page is search page result again.
 		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 		searchPage = searchPage.enterTextInSearchBox(prop.getProperty("searchText"));
 	}
@@ -40,28 +40,28 @@ public class SearchPageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyPageTitle(){
 		String searchPageTitle = searchPage.validateTitlePage();
-		Assert.assertEquals(searchPageTitle, "Search - My Store");
+		Assert.assertEquals(searchPageTitle, "Search - My Store", "Search Page title not found");
 	}
 	
 	@Test(priority=2)
 	public void verifySearchBoxPresentTest(){
-		Assert.assertTrue(searchPage.validateSearchBox());
+		Assert.assertTrue(searchPage.validateSearchBox(), "Search text box not displayed");
 	}
 
 	@Test(priority=3)
 	public void verifyEnterSearchTextTest(){
 		String temp = searchPage.validateSearchCriteria();
-		assertTrue(temp.contains("DRESS"));
+		assertTrue(temp.contains("DRESS"), "Text not entered for searching");
 	}
 	
 	@Test(priority=4)
 	public void verifySearchResultNotNullTest(){
-		Assert.assertNotNull(searchPage.validateSearchResult());
+		Assert.assertNotNull(searchPage.validateSearchResult(), "No search result displayed");
 	}
 	
 	@Test(priority=5)
 	public void verifyResultTextTest(){
-		assertTrue(searchPage.validateResultText().matches("[0-9]{1} results have been found."));
+		assertTrue(searchPage.validateResultText().matches("[0-9]{1} results have been found."), "No result found with search text");
 	}
 	
 	@AfterMethod

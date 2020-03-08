@@ -12,7 +12,8 @@ public class HomePage extends TestBase{
 	
 	// Page factory - Object Repository
 	
-	@FindBy(xpath = "//a[@class='account']/span")
+	//@FindBy(xpath = "//a[@class='account']/span")
+	@FindBy(className = "account")
 	@CacheLookup
 	WebElement userNameLabel;
 	
@@ -21,11 +22,9 @@ public class HomePage extends TestBase{
 	
 	@FindBy(name= "img-responsive")
 	WebElement homeLogo;
-	
-	@FindBy(xpath= "//a[@class='logout']")
-	WebElement logoutLink;
-	
-	@FindBy(xpath= "//a[@title='View my shopping cart']")
+		
+	//@FindBy(xpath= "//a[@title='View my shopping cart']")
+	@FindBy(className= "shopping_cart")
 	WebElement myCart;
 	
 	//Initializing the Page Objects:
@@ -46,24 +45,10 @@ public class HomePage extends TestBase{
 				return searchBox.isDisplayed();
 			}
 			
-			public boolean validateLogoutLink(){
-				return logoutLink.isDisplayed();
-			}
-			
 			public boolean validateMyCartLink(){
 				return myCart.isDisplayed();
 			}
-			
-			/*public ShoppingCartPage validateMyCart(){
-				myCart.click();
-				return new ShoppingCartPage();
-			}*/
-			
-			public LogoutPage validateCanLogout(){
-				logoutLink.click();
-				return new LogoutPage();
-			}
-			
+					
 			 public SearchPage enterSearchText(String st){
 				searchBox.sendKeys(st);
 				searchBox.sendKeys(Keys.ENTER);   	
