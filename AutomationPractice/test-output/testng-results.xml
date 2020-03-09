@@ -2,202 +2,202 @@
 <testng-results skipped="0" failed="1" ignored="0" total="19" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation Practice Test Suite" duration-ms="393338" started-at="2020-03-08T22:43:04Z" finished-at="2020-03-08T22:49:37Z">
+  <suite name="Automation Practice Test Suite" duration-ms="407524" started-at="2020-03-09T15:46:33Z" finished-at="2020-03-09T15:53:20Z">
     <groups>
     </groups>
-    <test name="Automation Practice Test Cases" duration-ms="393338" started-at="2020-03-08T22:43:04Z" finished-at="2020-03-08T22:49:37Z">
+    <test name="Automation Practice Test Cases" duration-ms="407524" started-at="2020-03-09T15:46:33Z" finished-at="2020-03-09T15:53:20Z">
       <class name="com.automation.qa.testcases.SelectAndCheckoutPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="20890" started-at="2020-03-08T22:43:53Z" finished-at="2020-03-08T22:44:14Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="23056" started-at="2020-03-09T15:47:26Z" finished-at="2020-03-09T15:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOrderPageTitleTest()[pri:1, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="verifyOrderPageTitleTest" duration-ms="9" started-at="2020-03-08T22:44:14Z" finished-at="2020-03-08T22:44:14Z">
+        <test-method status="PASS" signature="verifyOrderPageTitleTest()[pri:1, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="verifyOrderPageTitleTest" duration-ms="9" started-at="2020-03-09T15:47:49Z" finished-at="2020-03-09T15:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="735" started-at="2020-03-08T22:44:14Z" finished-at="2020-03-08T22:44:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="667" started-at="2020-03-09T15:47:49Z" finished-at="2020-03-09T15:47:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="21007" started-at="2020-03-08T22:45:21Z" finished-at="2020-03-08T22:45:42Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="20999" started-at="2020-03-09T15:48:56Z" finished-at="2020-03-09T15:49:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateSelectedItemTest()[pri:2, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="validateSelectedItemTest" duration-ms="34" started-at="2020-03-08T22:45:42Z" finished-at="2020-03-08T22:45:42Z">
+        <test-method status="PASS" signature="validateSelectedItemTest()[pri:2, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="validateSelectedItemTest" duration-ms="39" started-at="2020-03-09T15:49:17Z" finished-at="2020-03-09T15:49:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSelectedItemTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="715" started-at="2020-03-08T22:45:42Z" finished-at="2020-03-08T22:45:43Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="701" started-at="2020-03-09T15:49:17Z" finished-at="2020-03-09T15:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="20808" started-at="2020-03-08T22:47:12Z" finished-at="2020-03-08T22:47:33Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="21652" started-at="2020-03-09T15:50:48Z" finished-at="2020-03-09T15:51:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyAddressPresentTest()[pri:3, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="verifyAddressPresentTest" duration-ms="40" started-at="2020-03-08T22:47:33Z" finished-at="2020-03-08T22:47:33Z">
+        <test-method status="PASS" signature="verifyAddressPresentTest()[pri:3, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="verifyAddressPresentTest" duration-ms="49" started-at="2020-03-09T15:51:10Z" finished-at="2020-03-09T15:51:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddressPresentTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="801" started-at="2020-03-08T22:47:33Z" finished-at="2020-03-08T22:47:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="672" started-at="2020-03-09T15:51:10Z" finished-at="2020-03-09T15:51:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="22735" started-at="2020-03-08T22:48:49Z" finished-at="2020-03-08T22:49:12Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="setUp" is-config="true" duration-ms="24853" started-at="2020-03-09T15:52:29Z" finished-at="2020-03-09T15:52:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyConfirmationMessageTest()[pri:4, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="verifyConfirmationMessageTest" duration-ms="5456" started-at="2020-03-08T22:49:12Z" finished-at="2020-03-08T22:49:18Z">
+        <test-method status="PASS" signature="verifyConfirmationMessageTest()[pri:4, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="verifyConfirmationMessageTest" duration-ms="6458" started-at="2020-03-09T15:52:54Z" finished-at="2020-03-09T15:53:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyConfirmationMessageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="713" started-at="2020-03-08T22:49:18Z" finished-at="2020-03-08T22:49:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SelectAndCheckoutPageTest@5b275dab]" name="tearDown" is-config="true" duration-ms="677" started-at="2020-03-09T15:53:01Z" finished-at="2020-03-09T15:53:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.qa.testcases.SelectAndCheckoutPageTest -->
       <class name="com.automation.qa.testcases.SearchPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17257" started-at="2020-03-08T22:43:35Z" finished-at="2020-03-08T22:43:52Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="21437" started-at="2020-03-09T15:47:04Z" finished-at="2020-03-09T15:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitle()[pri:1, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifyPageTitle" duration-ms="9" started-at="2020-03-08T22:43:52Z" finished-at="2020-03-08T22:43:52Z">
+        <test-method status="PASS" signature="verifyPageTitle()[pri:1, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifyPageTitle" duration-ms="7" started-at="2020-03-09T15:47:26Z" finished-at="2020-03-09T15:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="694" started-at="2020-03-08T22:43:52Z" finished-at="2020-03-08T22:43:53Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="685" started-at="2020-03-09T15:47:26Z" finished-at="2020-03-09T15:47:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17586" started-at="2020-03-08T22:45:02Z" finished-at="2020-03-08T22:45:20Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17383" started-at="2020-03-09T15:48:38Z" finished-at="2020-03-09T15:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchBoxPresentTest()[pri:2, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifySearchBoxPresentTest" duration-ms="32" started-at="2020-03-08T22:45:20Z" finished-at="2020-03-08T22:45:20Z">
+        <test-method status="PASS" signature="verifySearchBoxPresentTest()[pri:2, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifySearchBoxPresentTest" duration-ms="42" started-at="2020-03-09T15:48:55Z" finished-at="2020-03-09T15:48:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchBoxPresentTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="738" started-at="2020-03-08T22:45:20Z" finished-at="2020-03-08T22:45:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="665" started-at="2020-03-09T15:48:55Z" finished-at="2020-03-09T15:48:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17713" started-at="2020-03-08T22:46:54Z" finished-at="2020-03-08T22:47:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17911" started-at="2020-03-09T15:50:29Z" finished-at="2020-03-09T15:50:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyEnterSearchTextTest()[pri:3, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifyEnterSearchTextTest" duration-ms="28" started-at="2020-03-08T22:47:11Z" finished-at="2020-03-08T22:47:11Z">
+        <test-method status="PASS" signature="verifyEnterSearchTextTest()[pri:3, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifyEnterSearchTextTest" duration-ms="35" started-at="2020-03-09T15:50:47Z" finished-at="2020-03-09T15:50:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyEnterSearchTextTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="703" started-at="2020-03-08T22:47:11Z" finished-at="2020-03-08T22:47:12Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="666" started-at="2020-03-09T15:50:47Z" finished-at="2020-03-09T15:50:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17684" started-at="2020-03-08T22:48:11Z" finished-at="2020-03-08T22:48:29Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="18769" started-at="2020-03-09T15:51:50Z" finished-at="2020-03-09T15:52:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifySearchResultNotNullTest()[pri:4, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifySearchResultNotNullTest" duration-ms="20065" started-at="2020-03-08T22:48:29Z" finished-at="2020-03-08T22:48:49Z">
+        <test-method status="PASS" signature="verifySearchResultNotNullTest()[pri:4, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifySearchResultNotNullTest" duration-ms="20059" started-at="2020-03-09T15:52:09Z" finished-at="2020-03-09T15:52:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchResultNotNullTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="680" started-at="2020-03-08T22:48:49Z" finished-at="2020-03-08T22:48:49Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="633" started-at="2020-03-09T15:52:29Z" finished-at="2020-03-09T15:52:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="17858" started-at="2020-03-08T22:49:18Z" finished-at="2020-03-08T22:49:36Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="setUp" is-config="true" duration-ms="18264" started-at="2020-03-09T15:53:01Z" finished-at="2020-03-09T15:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyResultTextTest()[pri:5, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifyResultTextTest" duration-ms="29" started-at="2020-03-08T22:49:36Z" finished-at="2020-03-08T22:49:36Z">
+        <test-method status="PASS" signature="verifyResultTextTest()[pri:5, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="verifyResultTextTest" duration-ms="28" started-at="2020-03-09T15:53:20Z" finished-at="2020-03-09T15:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResultTextTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="721" started-at="2020-03-08T22:49:36Z" finished-at="2020-03-08T22:49:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.SearchPageTest@523884b2]" name="tearDown" is-config="true" duration-ms="649" started-at="2020-03-09T15:53:20Z" finished-at="2020-03-09T15:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.qa.testcases.SearchPageTest -->
       <class name="com.automation.qa.testcases.OrderHistoryPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="setUp" is-config="true" duration-ms="16514" started-at="2020-03-08T22:44:14Z" finished-at="2020-03-08T22:44:31Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="setUp" is-config="true" duration-ms="16492" started-at="2020-03-09T15:47:50Z" finished-at="2020-03-09T15:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOrderHistoryExistTest()[pri:1, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="verifyOrderHistoryExistTest" duration-ms="229" started-at="2020-03-08T22:44:31Z" finished-at="2020-03-08T22:44:31Z">
+        <test-method status="PASS" signature="verifyOrderHistoryExistTest()[pri:1, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="verifyOrderHistoryExistTest" duration-ms="233" started-at="2020-03-09T15:48:07Z" finished-at="2020-03-09T15:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderHistoryExistTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="tearDown" is-config="true" duration-ms="732" started-at="2020-03-08T22:44:31Z" finished-at="2020-03-08T22:44:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="tearDown" is-config="true" duration-ms="695" started-at="2020-03-09T15:48:07Z" finished-at="2020-03-09T15:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="setUp" is-config="true" duration-ms="16354" started-at="2020-03-08T22:45:43Z" finished-at="2020-03-08T22:45:59Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="setUp" is-config="true" duration-ms="16694" started-at="2020-03-09T15:49:18Z" finished-at="2020-03-09T15:49:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyOrderHistoryNotEmptyTest()[pri:2, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="verifyOrderHistoryNotEmptyTest" duration-ms="21305" started-at="2020-03-08T22:45:59Z" finished-at="2020-03-08T22:46:20Z">
+        <test-method status="PASS" signature="verifyOrderHistoryNotEmptyTest()[pri:2, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="verifyOrderHistoryNotEmptyTest" duration-ms="21398" started-at="2020-03-09T15:49:34Z" finished-at="2020-03-09T15:49:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOrderHistoryNotEmptyTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="tearDown" is-config="true" duration-ms="676" started-at="2020-03-08T22:46:20Z" finished-at="2020-03-08T22:46:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="tearDown" is-config="true" duration-ms="652" started-at="2020-03-09T15:49:56Z" finished-at="2020-03-09T15:49:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="setUp" is-config="true" duration-ms="16384" started-at="2020-03-08T22:47:34Z" finished-at="2020-03-08T22:47:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="setUp" is-config="true" duration-ms="18395" started-at="2020-03-09T15:51:10Z" finished-at="2020-03-09T15:51:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyDownloadInvoiceTest()[pri:3, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="verifyDownloadInvoiceTest" duration-ms="3517" started-at="2020-03-08T22:47:50Z" finished-at="2020-03-08T22:47:54Z">
+        <test-method status="PASS" signature="verifyDownloadInvoiceTest()[pri:3, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="verifyDownloadInvoiceTest" duration-ms="3528" started-at="2020-03-09T15:51:29Z" finished-at="2020-03-09T15:51:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDownloadInvoiceTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="tearDown" is-config="true" duration-ms="723" started-at="2020-03-08T22:47:54Z" finished-at="2020-03-08T22:47:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.OrderHistoryPageTest@61832929]" name="tearDown" is-config="true" duration-ms="671" started-at="2020-03-09T15:51:32Z" finished-at="2020-03-09T15:51:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.qa.testcases.OrderHistoryPageTest -->
       <class name="com.automation.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="13935" started-at="2020-03-08T22:43:04Z" finished-at="2020-03-08T22:43:18Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="13964" started-at="2020-03-09T15:46:33Z" finished-at="2020-03-09T15:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPageTitleTest()[pri:1, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyPageTitleTest" duration-ms="15" started-at="2020-03-08T22:43:18Z" finished-at="2020-03-08T22:43:18Z">
+        <test-method status="PASS" signature="verifyPageTitleTest()[pri:1, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyPageTitleTest" duration-ms="16" started-at="2020-03-09T15:46:47Z" finished-at="2020-03-09T15:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-03-08T22:43:18Z" finished-at="2020-03-08T22:43:18Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="718" started-at="2020-03-09T15:46:47Z" finished-at="2020-03-09T15:46:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="12887" started-at="2020-03-08T22:44:32Z" finished-at="2020-03-08T22:44:45Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="12958" started-at="2020-03-09T15:48:07Z" finished-at="2020-03-09T15:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLogoDisplayTest()[pri:2, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyLogoDisplayTest" duration-ms="41" started-at="2020-03-08T22:44:45Z" finished-at="2020-03-08T22:44:45Z">
+        <test-method status="PASS" signature="verifyLogoDisplayTest()[pri:2, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyLogoDisplayTest" duration-ms="38" started-at="2020-03-09T15:48:20Z" finished-at="2020-03-09T15:48:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogoDisplayTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="694" started-at="2020-03-08T22:44:45Z" finished-at="2020-03-08T22:44:46Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="635" started-at="2020-03-09T15:48:20Z" finished-at="2020-03-09T15:48:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="12836" started-at="2020-03-08T22:46:21Z" finished-at="2020-03-08T22:46:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="13062" started-at="2020-03-09T15:49:56Z" finished-at="2020-03-09T15:50:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyLoginTest()[pri:3, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyLoginTest" duration-ms="2884" started-at="2020-03-08T22:46:34Z" finished-at="2020-03-08T22:46:37Z">
+        <test-method status="PASS" signature="verifyLoginTest()[pri:3, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyLoginTest" duration-ms="2928" started-at="2020-03-09T15:50:09Z" finished-at="2020-03-09T15:50:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="708" started-at="2020-03-08T22:46:37Z" finished-at="2020-03-08T22:46:37Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="670" started-at="2020-03-09T15:50:12Z" finished-at="2020-03-09T15:50:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="12936" started-at="2020-03-08T22:47:54Z" finished-at="2020-03-08T22:48:07Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="setUp" is-config="true" duration-ms="12936" started-at="2020-03-09T15:51:33Z" finished-at="2020-03-09T15:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="verifyInvalidLoginAndCaptureScreenshotTest()[pri:4, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyInvalidLoginAndCaptureScreenshotTest" duration-ms="2961" started-at="2020-03-08T22:48:07Z" finished-at="2020-03-08T22:48:10Z">
+        <test-method status="FAIL" signature="verifyInvalidLoginAndCaptureScreenshotTest()[pri:4, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="verifyInvalidLoginAndCaptureScreenshotTest" duration-ms="3234" started-at="2020-03-09T15:51:46Z" finished-at="2020-03-09T15:51:49Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[ Unsuccessful Login please check username and password.Screenshot captured for debugging purpose. expected [false] but found [true]]]>
@@ -227,45 +227,45 @@ at java.lang.Thread.run(Unknown Source)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidLoginAndCaptureScreenshotTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="748" started-at="2020-03-08T22:48:10Z" finished-at="2020-03-08T22:48:11Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.LoginPageTest@28d25987]" name="tearDown" is-config="true" duration-ms="679" started-at="2020-03-09T15:51:49Z" finished-at="2020-03-09T15:51:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.qa.testcases.LoginPageTest -->
       <class name="com.automation.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="setUp" is-config="true" duration-ms="15845" started-at="2020-03-08T22:43:18Z" finished-at="2020-03-08T22:43:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="setUp" is-config="true" duration-ms="16101" started-at="2020-03-09T15:46:47Z" finished-at="2020-03-09T15:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="verifyHomePageTitleTest" duration-ms="8" started-at="2020-03-08T22:43:34Z" finished-at="2020-03-08T22:43:34Z">
+        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="verifyHomePageTitleTest" duration-ms="11" started-at="2020-03-09T15:47:04Z" finished-at="2020-03-09T15:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="696" started-at="2020-03-08T22:43:34Z" finished-at="2020-03-08T22:43:35Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="645" started-at="2020-03-09T15:47:04Z" finished-at="2020-03-09T15:47:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="setUp" is-config="true" duration-ms="16084" started-at="2020-03-08T22:44:46Z" finished-at="2020-03-08T22:45:02Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="setUp" is-config="true" duration-ms="16039" started-at="2020-03-09T15:48:21Z" finished-at="2020-03-09T15:48:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyUserAccountNameTest()[pri:2, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="verifyUserAccountNameTest" duration-ms="45" started-at="2020-03-08T22:45:02Z" finished-at="2020-03-08T22:45:02Z">
+        <test-method status="PASS" signature="verifyUserAccountNameTest()[pri:2, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="verifyUserAccountNameTest" duration-ms="43" started-at="2020-03-09T15:48:37Z" finished-at="2020-03-09T15:48:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserAccountNameTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="700" started-at="2020-03-08T22:45:02Z" finished-at="2020-03-08T22:45:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="654" started-at="2020-03-09T15:48:37Z" finished-at="2020-03-09T15:48:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="setUp" is-config="true" duration-ms="15591" started-at="2020-03-08T22:46:37Z" finished-at="2020-03-08T22:46:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="setUp" is-config="true" duration-ms="15595" started-at="2020-03-09T15:50:13Z" finished-at="2020-03-09T15:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyMyCartLinkAndSearchBoxTest()[pri:3, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="verifyMyCartLinkAndSearchBoxTest" duration-ms="73" started-at="2020-03-08T22:46:53Z" finished-at="2020-03-08T22:46:53Z">
+        <test-method status="PASS" signature="verifyMyCartLinkAndSearchBoxTest()[pri:3, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="verifyMyCartLinkAndSearchBoxTest" duration-ms="69" started-at="2020-03-09T15:50:29Z" finished-at="2020-03-09T15:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMyCartLinkAndSearchBoxTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="731" started-at="2020-03-08T22:46:53Z" finished-at="2020-03-08T22:46:54Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.automation.qa.testcases.HomePageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="650" started-at="2020-03-09T15:50:29Z" finished-at="2020-03-09T15:50:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -60,16 +60,15 @@ public class OrderHistoryPageTest extends TestBase {
 		
 		historyPage.showOrderHistory();
 		historyPage.downloadFirstInvoice();
-
-		 //wait for download
-		 Thread.sleep(2000);
+	//wait for file download
+		Thread.sleep(2000);
 		 Assert.assertNotNull(folder.listFiles(), "Folder is empty and No file downloaded"); 
 	} 
 	
 	@AfterMethod
 	public void tearDown(){
 		
-		//Deleting all temp folders and file created for saving invoices
+	//Deleting all temp folders and file created for saving invoices
 		for(File file : folder.listFiles()) {
 			file.delete();
 		}

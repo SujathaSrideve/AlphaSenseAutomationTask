@@ -12,7 +12,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.automation.qa.util.TestUtil;
@@ -23,6 +25,7 @@ public class TestBase {
 	public static Properties prop;
 	public  static EventFiringWebDriver e_driver;
 	protected static File folder;
+
 	
 	
 	public TestBase(){
@@ -40,6 +43,7 @@ public class TestBase {
 	}
 	
 	public static void initialization(){
+		DesiredCapabilities capability=null;
 		String browserName = prop.getProperty("browser");
 		ChromeOptions options = new ChromeOptions();
 		
@@ -56,15 +60,30 @@ public class TestBase {
 			options.setExperimentalOption("prefs", perfs);
 			//driver = new ChromeDriver(options);
 		
-		if(browserName.equals("chrome")){
+			//Can be extended for opera, safari and other browsers.
+		if(browserName.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/chromedriver.exe");	
 			driver = new ChromeDriver(options); 
+			capability= DesiredCapabilities.chrome();
+			capability.setBrowserName("chrome");
+			capability.setPlatform(org.openqa.selenium.Platform.ANY);
 		}
-		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/geckodriver.exe");	
+		else if(browserName.equalsIgnoreCase("Firefox")){
+			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/geckodriver.exe");
+			capability= DesiredCapabilities.firefox();
+            capability.setBrowserName("firefox"); 
+            capability.setPlatform(org.openqa.selenium.Platform.ANY);
 			driver = new FirefoxDriver(); 
 		}
-
+		else if(browserName.equalsIgnoreCase("Edge")){
+			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"/src/main/resources/drivers/msedgedriver.exe");
+			capability= DesiredCapabilities.edge();
+            capability.setBrowserName("edge"); 
+            capability.setPlatform(org.openqa.selenium.Platform.WIN10);
+			driver = new EdgeDriver(); 
+		}
+		
+		
 		e_driver = new EventFiringWebDriver(driver);
 		driver = e_driver;
 		
